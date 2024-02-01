@@ -1,9 +1,9 @@
 {
   "name": "poor-mans-t-sql-formatter-vscode",
   "displayName": "Poor Man's T-SQL Formatter",
-  "description": "A Visual Studio Code and Azure Data Studio extension for Poor Man's T-SQL Formatter",
-  "version": "1.6.11",
-  "publisher": "TaoKlerks",
+  "description": "A Visual Studio Code and Azure Data Studio extension for Poor Man's T-SQL Formatter. This version includes some tweaks by me, but all credit goes to the original author, Tao Klerks.",
+  "version": "1.6.17",
+  "publisher": "WiiMusic",
   "engines": {
     "vscode": "^1.0.0",
     "sqlops": "^0.29.0"
@@ -194,7 +194,7 @@
           "default": false,
           "description": "Should keywords with synonyms use less common forms? (NOTE: only safe for T-SQL!)"
         }
-              }
+      }
     }
   },
   "scripts": {
@@ -209,6 +209,6 @@
     "vscode": "^1.1.6"
   },
   "dependencies": {
-    "@kyl12/poor-mans-t-sql-formatter": "^1.6.10"
+    "@kyl12/poor-mans-t-sql-formatter": "^1.6.17"
   }
 }
