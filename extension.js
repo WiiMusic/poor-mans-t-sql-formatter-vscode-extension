@@ -1,5 +1,5 @@
 const vscode = require('vscode');
-const sqlFormatter = require('poor-mans-t-sql-formatter');
+const sqlFormatter = require('@kyl12/poor-mans-t-sql-formatter');
 
 /* work:
  - options - integration / manual testing
