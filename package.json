@@ -190,6 +190,6 @@
     "@types/mocha": "^2.2.42"
   },
   "dependencies": {
-    "poor-mans-t-sql-formatter": "1.6.10"
+    "@kyl12/poor-mans-t-sql-formatter": "1.6.10"
   }
 }
