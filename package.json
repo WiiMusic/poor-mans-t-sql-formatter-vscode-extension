@@ -126,12 +126,12 @@
         },
         "poor-mans-t-sql-formatter.std.trailingCommas": {
           "type": "boolean",
-          "default": true,
+          "default": false,
           "description": "When starting a new line because of a comma, should the comma be at the end of line (VS the start of the next)?"
         },
         "poor-mans-t-sql-formatter.std.spaceAfterExpandedComma": {
           "type": "boolean",
-          "default": false,
+          "default": true,
           "description": "Should a space be added after the comma? (typically not if they are 'trailing')"
         },
         "poor-mans-t-sql-formatter.std.expandBooleanExpressions": {
