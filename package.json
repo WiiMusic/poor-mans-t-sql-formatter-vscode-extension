@@ -32,23 +32,31 @@
       }
     ],
     "menus": {
-      "commandPalette": [{
-        "command": "poor-mans-t-sql-formatter.formatSql",
-        "when": "editorFocus"
-      }],
-      "editor/context": [{
+      "commandPalette": [
+        {
+          "command": "poor-mans-t-sql-formatter.formatSql",
+          "when": "editorFocus"
+        }
+      ],
+      "editor/context": [
+        {
           "when": "editorFocus && resourceLangId == sql",
           "command": "poor-mans-t-sql-formatter.formatSql",
           "group": "1_modification"
-      }],
-      "editor/title/context": [{
+        }
+      ],
+      "editor/title/context": [
+        {
           "when": "editorFocus && resourceLangId == sql",
           "command": "poor-mans-t-sql-formatter.formatSql"
-      }],
-      "explorer/context": [{
+        }
+      ],
+      "explorer/context": [
+        {
           "when": "editorFocus && resourceLangId == sql",
           "command": "poor-mans-t-sql-formatter.formatSql"
-      }]
+        }
+      ]
     },
     "keybindings": {
       "command": "poor-mans-t-sql-formatter.formatSql",
@@ -66,7 +74,10 @@
         },
         "poor-mans-t-sql-formatter.expectedLanguages": {
           "type": "array",
-          "default": ["sql", "plaintext"],
+          "default": [
+            "sql",
+            "plaintext"
+          ],
           "description": "If the programming language for the current Edit Window does not match one of these languages, then the formatter will request confirmation before formatting. Default expects SQL files or files with no detected/specified language (plaintext). Asterisk (*) to allow any language."
         },
         "poor-mans-t-sql-formatter.errorOutputPrefix": {
@@ -78,7 +89,10 @@
           "type": "string",
           "default": "standard",
           "description": "What kind of formatting to do - 'standard' or 'obfuscation'",
-          "enum": ["standard", "obfuscation"]
+          "enum": [
+            "standard",
+            "obfuscation"
+          ]
         },
         "poor-mans-t-sql-formatter.std.indent": {
           "type": "string",
@@ -183,13 +197,13 @@
     "test": "node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "typescript": "^2.6.1",
-    "vscode": "^1.1.6",
-    "eslint": "^4.6.1",
+    "@types/mocha": "^2.2.42",
     "@types/node": "^7.0.43",
-    "@types/mocha": "^2.2.42"
+    "eslint": "^8.56.0",
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.6"
   },
   "dependencies": {
-    "@kyl12/poor-mans-t-sql-formatter": "1.6.10"
+    "@kyl12/poor-mans-t-sql-formatter": "^1.6.10"
   }
 }
