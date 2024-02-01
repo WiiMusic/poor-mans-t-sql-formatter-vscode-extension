@@ -169,6 +169,11 @@
           "default": false,
           "description": "Should less-common T-SQL keywords be replaced with their standard counterparts? (NOTE: only safe for T-SQL!)"
         },
+        "poor-mans-t-sql-formatter.std.addBracketsAroundNames": {
+          "type": "boolean",
+          "default": true,
+          "description": "Should lists (columns, group by args, etc) be surrounded by brackets?"
+        },
         "poor-mans-t-sql-formatter.min.randomizeKeywordCase": {
           "type": "boolean",
           "default": false,
@@ -189,7 +194,7 @@
           "default": false,
           "description": "Should keywords with synonyms use less common forms? (NOTE: only safe for T-SQL!)"
         }
-      }
+              }
     }
   },
   "scripts": {
