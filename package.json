@@ -1,12 +1,12 @@
 {
-  "name": "poor-mans-t-sql-formatter-vscode",
-  "displayName": "Poor Man's T-SQL Formatter",
+  "name": "poor-mans-t-sql-formatter-vscode-wiimusic",
+  "displayName": "Poor Man's T-SQL Formatter (WiiMusic's version)",
   "description": "A Visual Studio Code and Azure Data Studio extension for Poor Man's T-SQL Formatter. This version includes some tweaks by me, but all credit goes to the original author, Tao Klerks.",
-  "version": "1.6.17",
+  "version": "1.6.18",
   "publisher": "WiiMusic",
   "engines": {
-    "vscode": "^1.0.0",
-    "sqlops": "^0.29.0"
+    "vscode": "^1.39.0",
+    "azdata": "*"
   },
   "categories": [
     "Other"
