@@ -22,8 +22,8 @@ Please see the separate file CHANGELOG.md for product release notes.
 
 ## Status
 
-* Readme needs some work
-* Automated testing needs lots of work
-* Performance in the JS environment still needs some work
-* -> see (and/or add) issues for the VSCode integration at <https://github.com/TaoK/poor-mans-t-sql-formatter-vscode-extension/issues>
-* -> see (and/or add) issues for the library / formatting functionality and options at <https://github.com/TaoK/PoorMansTSqlFormatter/issues>
+- Readme needs some work
+- Automated testing needs lots of work
+- Performance in the JS environment still needs some work
+- -> see (and/or add) issues for the VSCode integration at <https://github.com/WiiMusic/poor-mans-t-sql-formatter-vscode-extension/issues>
+- -> see (and/or add) issues for the library / formatting functionality and options at <https://github.com/TaoK/PoorMansTSqlFormatter/issues>

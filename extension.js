@@ -106,6 +106,26 @@ function activate(context) {
   });
 
   context.subscriptions.push(commandDisposable);
+
+  const formattingProvider = vscode.languages.registerDocumentFormattingEditProvider(
+        ['sql', 'mssql'],
+        {
+            provideDocumentFormattingEdits(document) {
+                let extensionSettingsObject = vscode.workspace.getConfiguration("poor-mans-t-sql-formatter");
+                let inputSql = document.getText();
+                let libResult = sqlFormatter.formatSql(inputSql, collectOptions(extensionSettingsObject));
+                
+                let fullRange = new vscode.Range(
+                    document.positionAt(0),
+                    document.positionAt(inputSql.length)
+                );
+                
+                return [vscode.TextEdit.replace(fullRange, libResult.text)];
+            }
+        }
+    );
+
+    context.subscriptions.push(formattingProvider);
 }
 exports.activate = activate;
 
