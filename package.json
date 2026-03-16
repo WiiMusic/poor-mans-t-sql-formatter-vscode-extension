@@ -18,12 +18,12 @@
     ],
     "license": "AGPL-3.0",
     "bugs": {
-        "url": "https://github.com/TaoK/poor-mans-t-sql-formatter-vscode-extension/issues"
+        "url": "https://github.com/WiiMusic/poor-mans-t-sql-formatter-vscode-extension/issues"
     },
-    "homepage": "https://github.com/TaoK/poor-mans-t-sql-formatter-vscode-extension",
+    "homepage": "https://github.com/WiiMusic/poor-mans-t-sql-formatter-vscode-extension",
     "repository": {
         "type": "git",
-        "url": "https://github.com/TaoK/poor-mans-t-sql-formatter-vscode-extension.git"
+        "url": "https://github.com/WiiMusic/poor-mans-t-sql-formatter-vscode-extension.git"
     },
     "main": "./extension",
     "contributes": {
