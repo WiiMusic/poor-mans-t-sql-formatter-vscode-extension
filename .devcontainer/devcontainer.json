@@ -1,0 +1,28 @@
+{
+    "name": "VS Code Extension Development",
+    "build": {
+        "dockerfile": "Containerfile"
+    },
+    "workspaceFolder": "/workspace",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "containerEnv": {
+        "GIT_AUTHOR_NAME": "${localEnv:GIT_AUTHOR_NAME}",
+        "GIT_AUTHOR_EMAIL": "${localEnv:GIT_AUTHOR_EMAIL}"
+    },
+    "postCreateCommand": {
+        "gitName": "git config --global user.name '${localEnv:GIT_AUTHOR_NAME}'",
+        "gitEmail": "git config --global user.email '${localEnv:GIT_AUTHOR_EMAIL}'",
+        "npmInstall": "npm install"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "amodio.tsl-problem-matcher",
+                "ms-vscode.extension-test-runner"
+            ]
+        }
+    },
+    "forwardPorts": []
+}
