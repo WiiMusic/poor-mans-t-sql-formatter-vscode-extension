@@ -17,9 +17,10 @@
     "customizations": {
         "vscode": {
             "extensions": [
+                "amodio.tsl-problem-matcher",
                 "dbaeumer.vscode-eslint",
                 "esbenp.prettier-vscode",
-                "amodio.tsl-problem-matcher",
+                "mhutchie.git-graph",
                 "ms-vscode.extension-test-runner"
             ]
         }
